@@ -42,20 +42,25 @@ SimpleNetScan is a comprehensive network security scanning tool built in Python 
 ```bash
 git clone https://github.com/Gyde04/SimpleNetScan.git
 cd SimpleNetScan
-
+```
 ### 2. Set Up Virtual Environment
+```bash
 # Create virtual environment
 python3 -m venv venv
 
 # Activate virtual environment
+```bash
+
 # On macOS/Linux:
 source venv/bin/activate
+
 # On Windows:
 .\venv\Scripts\activate
-
+```
 ### 3. Install Dependencies
-pip install -r requirements.txt
-
+```bash
+**pip install -r requirements.txt
+```
 4. Install Nmap
 
 macOS: brew install nmap
@@ -64,7 +69,10 @@ Windows: Download from nmap.org
 
 💻 Usage
 Basic Scan
-
+```bash
 sudo python3 simple_netscan.py 127.0.0.1
+```
 Advanced Usage
+```bash
 sudo python3 simple_netscan.py [target_ip] -p [port_range] -t [scan_type] -o [output_file]
+```
