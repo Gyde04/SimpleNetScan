@@ -66,9 +66,10 @@ pip install -r requirements.txt
 macOS: brew install nmap
 Linux: sudo apt-get install nmap
 Windows: Download from nmap.org
-
+```
 💻 Usage
 Basic Scan
+
 ```bash
 sudo python3 simple_netscan.py 127.0.0.1
 ```
