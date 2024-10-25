@@ -73,6 +73,68 @@ Basic Scan
 sudo python3 simple_netscan.py 127.0.0.1
 ```
 Advanced Usage
+
 ```bash
 sudo python3 simple_netscan.py [target_ip] -p [port_range] -t [scan_type] -o [output_file]
 ```
+Command-Line Options
+```bash
+Option    --portsPort           -typeScan type                         -o, --output
+Description  range to scan  (basic/aggressive/stealth/comprehensive)  Output file name
+Example-p,  -p 1-1000-t,      -t aggressive                            -o scan_results
+```
+Example Commands
+```bash
+# Basic scan of localhost
+sudo python3 simple_netscan.py 127.0.0.1
+
+# Aggressive scan of specific ports
+sudo python3 simple_netscan.py 192.168.1.1 -p 20-100 -t aggressive
+
+# Comprehensive scan with HTML output
+sudo python3 simple_netscan.py 10.0.0.1 -t comprehensive -o network_audit
+```
+📊 Output Examples
+Text Output
+```bash
+Host: 192.168.1.1
+State: up
+Ports:
+80/tcp   open  http
+443/tcp  open  https
+...
+```
+HTML Report
+
+Generates a formatted HTML file with:
+
+Scan summary
+Detailed port listings
+Service information
+OS detection results
+
+
+
+🔒 Security Considerations
+Important Notes
+
+Only scan networks you own or have explicit permission to test
+Some scan types may trigger security systems
+Use stealth scan options when network impact is a concern
+
+Best Practices
+
+Obtain written permission before scanning
+Document all scanning activities
+Review logs for unexpected behavior
+Follow responsible disclosure practices
+
+🤝 Contributing
+We welcome contributions! Please follow these steps:
+
+Fork the repository
+Create a feature branch
+Commit your changes
+Push to
+
+
