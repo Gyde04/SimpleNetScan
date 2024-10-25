@@ -1,5 +1,3 @@
-Here's a polished and organized README file for *SimpleNetScan* with improved structure, clarity, and formatting:
-
 ---
 
 # SimpleNetScan
