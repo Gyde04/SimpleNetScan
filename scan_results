@@ -1,0 +1,6 @@
+Scan Results for 127.0.0.1
+Time: 2024-10-25 09:56:32.286925
+Scan Type: aggressive
+Port Range: 1-100
+
+host;hostname;hostname_type;protocol;port;name;state;product;extrainfo;reason;version;conf;cpe
